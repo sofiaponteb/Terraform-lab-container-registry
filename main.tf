@@ -3,7 +3,7 @@ data "ibm_resource_group" "group" {
 }
 
 resource "ibm_cr_namespace" "cr_namespace" {
-    name = "<namespace_name>"
+    name = "namespace-schematics"
     resource_group_id = data.ibm_resource_group.group.id
 }
 
@@ -13,7 +13,7 @@ resource "ibm_cr_retention_policy" "cr_retention_policy" {
 }
 
 resource "ibm_iam_user_policy" "policy" {
-    ibm_id = "user@ibm.com"
+    ibm_id = "aaponte@unal.edu.co"
     roles  = ["Manager"]
 
     resources {
