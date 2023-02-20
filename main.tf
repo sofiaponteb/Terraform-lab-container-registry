@@ -1,5 +1,5 @@
 data "ibm_resource_group" "group" {
-    name = "default"
+    name = "Default"
 }
 
 resource "ibm_cr_namespace" "cr_namespace" {
